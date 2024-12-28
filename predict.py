@@ -19,15 +19,6 @@ def predict(X, projected_centroid, W):
                 classe = i
                 distance = new_dist
         label.append(classe)
-    
-            
-        
-
-    # ====================== YOUR CODE HERE ======================
-    # Instructions: Fill in the code to implement the classification
-    # part of LDA. Follow the steps given in the assigment.
-
-    # =============================================================
-
+  
     # Return the predicted labels of the test data X
     return np.array(label)
