@@ -58,15 +58,4 @@ def my_LDA(X, Y):
     X_lda = np.matmul(X, W)
     projected_centroid = np.array([np.matmul(W.T, means[classe]) for classe in means])
         
-        
-    # ====================== YOUR CODE HERE ======================
-    # Instructions: Implement the LDA technique, following the
-    # steps given in the pseudocode on the assignment.
-    # The function should return the projection matrix W,
-    # the centroid vector for each class projected to the new
-    # space defined by W and the projected data X_lda.
-
-
-    # =============================================================
-
     return W, projected_centroid, X_lda
